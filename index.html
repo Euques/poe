@@ -9,4 +9,28 @@
 		cursor: pointer;
 	}
 </style>
-</head> <body> <h1>[Compartilhe](poe://www.poe.com/_api/key_phrase?phrase=Compartilhe&prompt=Tell%20me%20more%20about%20Compartilhe.) o site Eu Amo Charme</h1> <button onclick="compartilhar()">Compartilhar</button> <script> function compartilhar() { navigator.share({ title: 'Eu Amo Charme', url: 'https://euamocharme.com.br' }) .then(() => console.log('Link compartilhado com sucesso!')) .catch((error) => console.log('Erro ao compartilhar: ', error)); } </script> </body> </html>
+</head> 
+	<body> 
+		 
+		
+		<button onclick="compartilhar()">Compartilhar</button> <script> function compartilhar() { navigator.share({ title: 'Eu Amo Charme', url: 'https://euamocharme.com.br' }) .then(() => console.log('Link compartilhado com sucesso!')) .catch((error) => console.log('Erro ao compartilhar: ', error)); } </script>
+		
+		<a href="javascript:void(0)" onclick="share()">
+	<img width="25" height="25" src="https://ayltoninacio.com.br/img/s/21w50.jpg" alt="">
+</a>
+<script>	
+	function share(){
+	if (navigator.share !== undefined) {
+		navigator.share({
+			title: 'Eu Amo Charme',
+			text: 'Agora vamos ver o que tem de melhor no chame nacional e internacional',
+			url: 'https://euamocharme.com.br',
+		})
+		.then(() => console.log('Successful share'))
+		.catch((error) => console.log('Error sharing', error));
+	}
+}
+	
+		</script>
+	
+	</body> </html>
