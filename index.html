@@ -1,0 +1,12 @@
+<!DOCTYPE html> <html> <head> <title>Botão de compartilhamento</title> <meta charset="utf-8"> <style> body { font-family: [Arial](poe://www.poe.com/_api/key_phrase?phrase=Arial&prompt=Tell%20me%20more%20about%20Arial.), sans-serif; text-align: center; }
+	button {
+		background-color: #0077ff;
+		color: #fff;
+		border: none;
+		padding: 10px 20px;
+		font-size: 16px;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+</style>
+</head> <body> <h1>[Compartilhe](poe://www.poe.com/_api/key_phrase?phrase=Compartilhe&prompt=Tell%20me%20more%20about%20Compartilhe.) o site Eu Amo Charme</h1> <button onclick="compartilhar()">Compartilhar</button> <script> function compartilhar() { navigator.share({ title: 'Eu Amo Charme', url: 'https://euamocharme.com.br' }) .then(() => console.log('Link compartilhado com sucesso!')) .catch((error) => console.log('Erro ao compartilhar: ', error)); } </script> </body> </html>
